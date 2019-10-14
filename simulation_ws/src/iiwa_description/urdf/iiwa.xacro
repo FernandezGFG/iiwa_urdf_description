@@ -8,7 +8,9 @@
     <m_link_mesh    name="${link00_name}"
                     origin_xyz="0 0 0" origin_rpy="0 0 0"
                     meshfile="package://iiwa_description/meshes/link0-binary.stl"
-                    meshscale="${m_meshscale}" />
+                    meshscale="${m_meshscale}"
+                    mass="1000.0"
+                    ixx="200" ixy="0" ixz="0" iyy="200" iyz="0" izz="200"/>
 
     <m_joint    name="${link00_name}__${link01_name}"
                 type="revolute"
@@ -20,7 +22,9 @@
     <m_link_mesh    name="${link01_name}"
                     origin_xyz="0 0 0" origin_rpy="0 0 0"
                     meshfile="package://iiwa_description/meshes/link1-binary.stl"
-                    meshscale="${m_meshscale}" />
+                    meshscale="${m_meshscale}"
+                    mass="1000.0"
+                    ixx="200" ixy="0" ixz="0" iyy="200" iyz="0" izz="200" />
 
     <m_joint    name="${link01_name}__${link02_name}"
                 type="revolute"
@@ -32,7 +36,9 @@
     <m_link_mesh    name="${link02_name}"
                     origin_xyz="0 0 -0.36" origin_rpy="0 0 0"
                     meshfile="package://iiwa_description/meshes/link2-binary.stl"
-                    meshscale="${m_meshscale}" />
+                    meshscale="${m_meshscale}"
+                    mass="1000.0"
+                    ixx="200" ixy="0" ixz="0" iyy="200" iyz="0" izz="200" />
 
     <m_joint    name="${link02_name}__${link03_name}"
                 type="revolute"
@@ -44,7 +50,9 @@
     <m_link_mesh    name="${link03_name}"
                     origin_xyz="0 0 -0.36" origin_rpy="0 0 0"
                     meshfile="package://iiwa_description/meshes/link3-binary.stl"
-                    meshscale="${m_meshscale}" />
+                    meshscale="${m_meshscale}"
+                    mass="1000.0"
+                    ixx="200" ixy="0" ixz="0" iyy="200" iyz="0" izz="200" />
 
     <m_joint    name="${link03_name}__${link04_name}"
                 type="revolute"
@@ -56,7 +64,9 @@
     <m_link_mesh    name="${link04_name}"
                     origin_xyz="0 0 -0.78" origin_rpy="0 0 0"
                     meshfile="package://iiwa_description/meshes/link4-binary.stl"
-                    meshscale="${m_meshscale}" />
+                    meshscale="${m_meshscale}"
+                    mass="1000.0"
+                    ixx="200" ixy="0" ixz="0" iyy="200" iyz="0" izz="200" />
 
     <m_joint    name="${link04_name}__${link05_name}"
                 type="revolute"
@@ -68,7 +78,9 @@
     <m_link_mesh    name="${link05_name}"
                     origin_xyz="0 0 -0.78" origin_rpy="0 0 0"
                     meshfile="package://iiwa_description/meshes/link5-binary.stl"
-                    meshscale="${m_meshscale}" />
+                    meshscale="${m_meshscale}"
+                    mass="1000.0"
+                    ixx="200" ixy="0" ixz="0" iyy="200" iyz="0" izz="200" />
 
     <m_joint    name="${link05_name}__${link06_name}"
                 type="revolute"
@@ -80,7 +92,9 @@
     <m_link_mesh    name="${link06_name}"
                     origin_xyz="0 0 -1.18" origin_rpy="0 0 0"
                     meshfile="package://iiwa_description/meshes/link6-binary.stl"
-                    meshscale="${m_meshscale}" />
+                    meshscale="${m_meshscale}"
+                    mass="1000.0"
+                    ixx="200" ixy="0" ixz="0" iyy="200" iyz="0" izz="200" />
 
     <m_joint    name="${link06_name}__${link07_name}"
                 type="revolute"
@@ -92,7 +106,9 @@
     <m_link_mesh    name="${link07_name}"
                     origin_xyz="0 0 -1.18" origin_rpy="0 0 0"
                     meshfile="package://iiwa_description/meshes/link7-binary.stl"
-                    meshscale="${m_meshscale}" />
+                    meshscale="${m_meshscale}"
+                    mass="1000.0"
+                    ixx="200" ixy="0" ixz="0" iyy="200" iyz="0" izz="200" />
 
 <!--
     <link name="base_link">
