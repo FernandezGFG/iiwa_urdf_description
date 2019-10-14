@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+
+<robot name="iiwa" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find iiwa_description)/urdf/iiwa_macros.xacro" />
+<xacro:include filename="$(find iiwa_description)/urdf/iiwa_parameters.xacro" />
+
+    <m_link_mesh    name="${link00_name}"
+                    origin_xyz="0 0 0" origin_rpy="0 0 0"
+                    meshfile="package://iiwa_description/meshes/link0-binary.stl"
+                    meshscale="${m_meshscale}" />
+
+    <m_joint    name="${link00_name}__${link01_name}"
+                type="revolute"
+                axis_xyz="0 0 1"
+                origin_xyz="0 0 0" origin_rpy="0 0 0"
+                parent="${link00_name}" child="${link01_name}"
+                limit_e="1000.0" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
+
+    <m_link_mesh    name="${link01_name}"
+                    origin_xyz="0 0 0" origin_rpy="0 0 0"
+                    meshfile="package://iiwa_description/meshes/link1-binary.stl"
+                    meshscale="${m_meshscale}" />
+
+    <m_joint    name="${link01_name}__${link02_name}"
+                type="revolute"
+                axis_xyz="0 1 0"
+                origin_xyz="0 0 0.36" origin_rpy="0 0 0"
+                parent="${link01_name}" child="${link02_name}"
+                limit_e="1000.0" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
+
+    <m_link_mesh    name="${link02_name}"
+                    origin_xyz="0 0 -0.36" origin_rpy="0 0 0"
+                    meshfile="package://iiwa_description/meshes/link2-binary.stl"
+                    meshscale="${m_meshscale}" />
+
+    <m_joint    name="${link02_name}__${link03_name}"
+                type="revolute"
+                axis_xyz="0 0 1"
+                origin_xyz="0 0 0" origin_rpy="0 0 0"
+                parent="${link02_name}" child="${link03_name}"
+                limit_e="1000.0" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
+
+    <m_link_mesh    name="${link03_name}"
+                    origin_xyz="0 0 -0.36" origin_rpy="0 0 0"
+                    meshfile="package://iiwa_description/meshes/link3-binary.stl"
+                    meshscale="${m_meshscale}" />
+
+    <m_joint    name="${link03_name}__${link04_name}"
+                type="revolute"
+                axis_xyz="0 1 0"
+                origin_xyz="0 0 0.42" origin_rpy="0 0 0"
+                parent="${link03_name}" child="${link04_name}"
+                limit_e="1000.0" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
+
+    <m_link_mesh    name="${link04_name}"
+                    origin_xyz="0 0 -0.78" origin_rpy="0 0 0"
+                    meshfile="package://iiwa_description/meshes/link4-binary.stl"
+                    meshscale="${m_meshscale}" />
+
+    <m_joint    name="${link04_name}__${link05_name}"
+                type="revolute"
+                axis_xyz="0 0 1"
+                origin_xyz="0 0 0" origin_rpy="0 0 0"
+                parent="${link04_name}" child="${link05_name}"
+                limit_e="1000.0" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
+
+    <m_link_mesh    name="${link05_name}"
+                    origin_xyz="0 0 -0.78" origin_rpy="0 0 0"
+                    meshfile="package://iiwa_description/meshes/link5-binary.stl"
+                    meshscale="${m_meshscale}" />
+
+    <m_joint    name="${link05_name}__${link06_name}"
+                type="revolute"
+                axis_xyz="0 1 0"
+                origin_xyz="0 0 0.4" origin_rpy="0 0 0"
+                parent="${link05_name}" child="${link06_name}"
+                limit_e="1000.0" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
+
+    <m_link_mesh    name="${link06_name}"
+                    origin_xyz="0 0 -1.18" origin_rpy="0 0 0"
+                    meshfile="package://iiwa_description/meshes/link6-binary.stl"
+                    meshscale="${m_meshscale}" />
+
+    <m_joint    name="${link06_name}__${link07_name}"
+                type="revolute"
+                axis_xyz="0 0 1"
+                origin_xyz="0 0 0" origin_rpy="0 0 0"
+                parent="${link06_name}" child="${link07_name}"
+                limit_e="1000.0" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
+
+    <m_link_mesh    name="${link07_name}"
+                    origin_xyz="0 0 -1.18" origin_rpy="0 0 0"
+                    meshfile="package://iiwa_description/meshes/link7-binary.stl"
+                    meshscale="${m_meshscale}" />
+
+<!--
+    <link name="base_link">
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://iiwa_description/meshes/link0-binary.stl" scale="0.005 0.005 0.005"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name="base_link_link_01" type="revolute">
+        <axis xyz="0 0 1"/>
+        <limit effort="1000.0" lower="-3.14" upper="3.14" velocity="0.5"/>
+        <origin rpy="0 0 0" xyz="0 0 0.5"/>
+        <parent link="base_link"/>
+        <child link="link_01"/>
+    </joint>
+-->
+<!--
+    <link name="link_01">
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.54"/>
+            <geometry>
+                <cylinder radius="0.35" length="0.4"/>
+            </geometry>
+        </visual>
+    </link>
+-->
+</robot>
