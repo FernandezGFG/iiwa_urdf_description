@@ -17,7 +17,7 @@
                 axis_xyz="0 0 1"
                 origin_xyz="0 0 0" origin_rpy="0 0 0"
                 parent="${link00_name}" child="${link01_name}"
-                limit_e="1000.0" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
+                limit_e="1000.0" limit_l="-2.967" limit_u="2.967" limit_v="1.483" />
 
     <m_link_mesh    name="${link01_name}"
                     origin_xyz="0 0 0" origin_rpy="0 0 0"
@@ -31,7 +31,7 @@
                 axis_xyz="0 1 0"
                 origin_xyz="0 0 0.36" origin_rpy="0 0 0"
                 parent="${link01_name}" child="${link02_name}"
-                limit_e="1000.0" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
+                limit_e="1000.0" limit_l="-2.094" limit_u="2.094" limit_v="1.483" />
 
     <m_link_mesh    name="${link02_name}"
                     origin_xyz="0 0 -0.36" origin_rpy="0 0 0"
@@ -45,7 +45,7 @@
                 axis_xyz="0 0 1"
                 origin_xyz="0 0 0" origin_rpy="0 0 0"
                 parent="${link02_name}" child="${link03_name}"
-                limit_e="1000.0" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
+                limit_e="1000.0" limit_l="-2.967" limit_u="2.967" limit_v="1.745" />
 
     <m_link_mesh    name="${link03_name}"
                     origin_xyz="0 0 -0.36" origin_rpy="0 0 0"
@@ -59,7 +59,7 @@
                 axis_xyz="0 1 0"
                 origin_xyz="0 0 0.42" origin_rpy="0 0 0"
                 parent="${link03_name}" child="${link04_name}"
-                limit_e="1000.0" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
+                limit_e="1000.0" limit_l="-2.094" limit_u="2.094" limit_v="1.309" />
 
     <m_link_mesh    name="${link04_name}"
                     origin_xyz="0 0 -0.78" origin_rpy="0 0 0"
@@ -73,7 +73,7 @@
                 axis_xyz="0 0 1"
                 origin_xyz="0 0 0" origin_rpy="0 0 0"
                 parent="${link04_name}" child="${link05_name}"
-                limit_e="1000.0" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
+                limit_e="1000.0" limit_l="-2.967" limit_u="2.967" limit_v="2.269" />
 
     <m_link_mesh    name="${link05_name}"
                     origin_xyz="0 0 -0.78" origin_rpy="0 0 0"
@@ -87,7 +87,7 @@
                 axis_xyz="0 1 0"
                 origin_xyz="0 0 0.4" origin_rpy="0 0 0"
                 parent="${link05_name}" child="${link06_name}"
-                limit_e="1000.0" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
+                limit_e="1000.0" limit_l="-2.094" limit_u="2.094" limit_v="2.356" />
 
     <m_link_mesh    name="${link06_name}"
                     origin_xyz="0 0 -1.18" origin_rpy="0 0 0"
@@ -101,7 +101,7 @@
                 axis_xyz="0 0 1"
                 origin_xyz="0 0 0" origin_rpy="0 0 0"
                 parent="${link06_name}" child="${link07_name}"
-                limit_e="1000.0" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
+                limit_e="1000.0" limit_l="-3.054" limit_u="3.054" limit_v="2.356" />
 
     <m_link_mesh    name="${link07_name}"
                     origin_xyz="0 0 -1.18" origin_rpy="0 0 0"
