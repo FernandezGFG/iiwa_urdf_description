@@ -110,32 +110,9 @@
                     mass="1000.0"
                     ixx="200" ixy="0" ixz="0" iyy="200" iyz="0" izz="200" />
 
-<!--
-    <link name="base_link">
-        <visual>
-            <origin rpy="0 0 0" xyz="0 0 0"/>
-            <geometry>
-                <mesh filename="package://iiwa_description/meshes/link0-binary.stl" scale="0.005 0.005 0.005"/>
-            </geometry>
-        </visual>
-    </link>
+	<gazebo>
+		<plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+		</plugin>
+	</gazebo>
 
-    <joint name="base_link_link_01" type="revolute">
-        <axis xyz="0 0 1"/>
-        <limit effort="1000.0" lower="-3.14" upper="3.14" velocity="0.5"/>
-        <origin rpy="0 0 0" xyz="0 0 0.5"/>
-        <parent link="base_link"/>
-        <child link="link_01"/>
-    </joint>
--->
-<!--
-    <link name="link_01">
-        <visual>
-            <origin rpy="0 0 0" xyz="0 0 0.54"/>
-            <geometry>
-                <cylinder radius="0.35" length="0.4"/>
-            </geometry>
-        </visual>
-    </link>
--->
 </robot>
