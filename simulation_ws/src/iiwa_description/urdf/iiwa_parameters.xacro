@@ -9,4 +9,6 @@
     <xacro:property name="link06_name" value="link_06" />
     <xacro:property name="link07_name" value="link_07" />
     <xacro:property name="m_meshscale" value="0.001 0.001 0.001" />
+
+	<xacro:property name="max_effort" value="1000" />
 </robot>
